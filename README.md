@@ -2,12 +2,14 @@
 A very tiny fast bootloader in hex data transfer mode.
 
 This is the first public release.
+
 Ia a very fast botloader that receive intel hex data format, 
 it is developed in ASM language to obtain a very tiny bootloader,
 with a maximum size of 512Words or 1024Bytes.
 
 
-This bootloader receive intel hex lines from a intel hex file with status response of every received line.
+This bootloader receive intel hex lines from a intel hex file with status response of every received line, 
+this bootloader can work with a serial adapter or throught a bluetooth or Xbee transceivers.
 
 Aditional this bootloader can receive several commands:
 
@@ -34,11 +36,10 @@ The boot loader report on every line the status chars:
 6) 'k' received line is OK and has been writed on buffer.
 
 
-This bootloader work on flash memory with pages, 
+This bootloader work with flash memory with pages, 
 all received data will be writed into a buffer until are received a request to write in another page, 
 when is received a write to another page the bootloader will write the buffer data into flash page 
-and will load to buffer the request write page, in this mode the bootloader not write directly to flash 
-
+and will load to buffer the requested write page, in this mode the bootloader not write directly to flash 
 but append data on flash.
 
 
