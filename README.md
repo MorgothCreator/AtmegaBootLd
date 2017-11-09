@@ -1,6 +1,6 @@
 # AtmegaBootLd
 
-# The project has been moved here https://morgothdisk.com:30001/explore/projects
+# The project has been moved here https://morgothdisk.com
 
 A very tiny fast bootloader in hex data transfer mode.
 
